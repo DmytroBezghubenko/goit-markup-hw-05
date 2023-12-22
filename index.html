@@ -589,7 +589,11 @@
           <p class="footer-rgh-caption">Subscribe</p>
           <form class="footer-form" name="subscribe">
             <label class="subscribe-form-field">
-              <input class="footer-input" type="email" placeholder="E-mail" />
+              <input
+                class="footer-input"
+                type="email"
+                placeholder="E-mail"
+                minlength="3" />
             </label>
             <button class="footer-butn" type="submit">
               Subscribe
@@ -603,7 +607,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Modal close button">
           <svg class="modal-btn-icon" width="8" height="8">
