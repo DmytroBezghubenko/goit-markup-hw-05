@@ -721,13 +721,7 @@ ol {
     margin-bottom: 16px;
 }
 
-.modal-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
+.modal-form {}
 
 .form-wraper {
     margin-bottom: 8px;
@@ -787,31 +781,12 @@ ol {
     border-color: #4D5AE5;
 }
 
-
-
 .form-icon {
     position: absolute;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-agreement {
-    display: block;
-    color: #8E8F99;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    margin-bottom: 24px;
-}
-
-.form-agreement-link {
-    color: #4d5ae5;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    text-decoration-line: underline;
 }
 
 .form-btn {
@@ -840,4 +815,64 @@ ol {
 
 .form-input:focus+.form-icon {
     fill: rgba(77, 90, 229, 1);
+}
+
+.send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* castom checkbox */
+
+.form-check {
+    margin-bottom: 24px;
+}
+
+.form-agreement {
+    display: block;
+    color: #8E8F99;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.checkbox {}
+
+.form-agreement-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked+.form-agreement-checkbox {
+    background-color: #404BBF;
+    border-color: transparent;
+}
+
+.form-agreement-icon {
+    opacity: 0;
+}
+
+.checkbox:checked+.form-agreement-checkbox>.form-agreement-icon {
+    opacity: 1;
+}
+
+.form-agreement-link {
+    color: #4d5ae5;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
 }
