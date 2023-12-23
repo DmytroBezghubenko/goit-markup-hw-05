@@ -727,6 +727,10 @@ ol {
     margin-bottom: 8px;
 }
 
+.form-wraper-textarea {
+    margin-bottom: 16px;
+}
+
 .form-label {
     display: block;
     color: #8E8F99;
@@ -768,7 +772,6 @@ ol {
     font-style: normal;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    margin-bottom: 16px;
 
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -828,7 +831,9 @@ ol {
 
 /* castom checkbox */
 
-.form-check {}
+.form-check {
+    margin-bottom: 24px;
+}
 
 .form-agreement {
     display: block;
@@ -836,7 +841,6 @@ ol {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    margin-bottom: 24px;
 }
 
 .checkbox {}
